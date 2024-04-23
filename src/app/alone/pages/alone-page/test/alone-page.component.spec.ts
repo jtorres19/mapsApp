@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MapsLayoutComponent } from './maps-layout.component';
+import { AlonePageComponent } from '../alone-page.component';
 
-describe('MapsLayoutComponent', () => {
-  let component: MapsLayoutComponent;
-  let fixture: ComponentFixture<MapsLayoutComponent>;
+describe('AlonePageComponent', () => {
+  let component: AlonePageComponent;
+  let fixture: ComponentFixture<AlonePageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MapsLayoutComponent]
+      imports: [AlonePageComponent]
     })
     .compileComponents();
-    
-    fixture = TestBed.createComponent(MapsLayoutComponent);
+
+    fixture = TestBed.createComponent(AlonePageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
