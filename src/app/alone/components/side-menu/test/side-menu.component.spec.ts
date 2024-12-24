@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ZoomRangePageComponent } from './zoom-range-page.component';
+import { SideMenuComponent } from '../side-menu.component';
 
-describe('ZoomRangePageComponent', () => {
-  let component: ZoomRangePageComponent;
-  let fixture: ComponentFixture<ZoomRangePageComponent>;
+describe('SideMenuComponent', () => {
+  let component: SideMenuComponent;
+  let fixture: ComponentFixture<SideMenuComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ZoomRangePageComponent]
+      declarations: [SideMenuComponent]
     })
     .compileComponents();
-    
-    fixture = TestBed.createComponent(ZoomRangePageComponent);
+
+    fixture = TestBed.createComponent(SideMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

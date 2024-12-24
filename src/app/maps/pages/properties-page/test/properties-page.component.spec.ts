@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MiniMapComponent } from './mini-map.component';
+import { PropertiesPageComponent } from '../properties-page.component';
 
-describe('MiniMapComponent', () => {
-  let component: MiniMapComponent;
-  let fixture: ComponentFixture<MiniMapComponent>;
+describe('PropertiesPageComponent', () => {
+  let component: PropertiesPageComponent;
+  let fixture: ComponentFixture<PropertiesPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MiniMapComponent]
+      declarations: [PropertiesPageComponent]
     })
     .compileComponents();
-    
-    fixture = TestBed.createComponent(MiniMapComponent);
+
+    fixture = TestBed.createComponent(PropertiesPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

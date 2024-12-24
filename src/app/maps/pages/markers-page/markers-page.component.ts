@@ -23,7 +23,7 @@ export class MarkersPageComponent implements AfterViewInit {
   public markers: MarkerAndColor[] = [];
 
   ngAfterViewInit(): void {
-    if (!this.divMap) throw 'El elemento HTML no fue encontrado'
+    if (!this.divMap) throw new Error('El elemento HTML no fue encontrado')
 
     this.map = new Map({
       // container: 'map', // container ID

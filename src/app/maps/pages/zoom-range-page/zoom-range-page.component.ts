@@ -8,13 +8,13 @@ import {LngLat, Map} from "mapbox-gl";
 })
 export class ZoomRangePageComponent implements AfterViewInit, OnDestroy {
   @ViewChild('map') divMap?: ElementRef;
-  private MAX_ZOOM: number = 18;
+  private readonly MAX_ZOOM: number = 18;
   public zoom: number = 10;
   public map?: Map;
   public currentLngLat: LngLat = new LngLat(-71.5, -33);
 
   ngAfterViewInit(): void {
-    if (!this.divMap) throw 'El elemento HTML no fue encontrado'
+    if (!this.divMap) throw new Error('El elemento HTML no fue encontrado')
 
     this.map = new Map({
       // container: 'map', // container ID
@@ -32,7 +32,7 @@ export class ZoomRangePageComponent implements AfterViewInit, OnDestroy {
   }
 
   mapListeners() {
-    if (!this.map) throw 'Mapa no inicializado';
+    if (!this.map) throw new Error('Mapa no inicializado');
 
     this.map.on('zoom', (ev) => this.zoom = this.map!.getZoom());
 
