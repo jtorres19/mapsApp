@@ -4,7 +4,6 @@ import express from 'express';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import AppServerModule from './src/main.server';
-import { render } from "@netlify/angular-runtime/src/common-engine";
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
@@ -14,10 +13,6 @@ export function app(): express.Express {
   const indexHtml = join(serverDistFolder, 'index.server.html');
 
   const commonEngine = new CommonEngine();
-
-  async function netlifyCommonEngineHandler(request: Request, context: any): Promise<Response> {
-    return await render(commonEngine)
-  }
 
   server.set('view engine', 'html');
   server.set('views', browserDistFolder);
