@@ -14,7 +14,8 @@ interface PlainMarker {
 @Component({
   selector: 'app-markers-page',
   templateUrl: './markers-page.component.html',
-  styleUrl: './markers-page.component.css'
+  styleUrl: './markers-page.component.css',
+  standalone: false
 })
 export class MarkersPageComponent implements AfterViewInit {
   @ViewChild('map') divMap?: ElementRef;

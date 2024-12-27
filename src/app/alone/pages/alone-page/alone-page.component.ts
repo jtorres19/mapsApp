@@ -3,14 +3,14 @@ import { CounterAloneComponent } from "../../components/counter-alone/counter-al
 import { SideMenuComponent } from "../../components/side-menu/side-menu.component";
 
 @Component({
-  selector: 'app-alone-page',
-  standalone: true,
   imports: [
     CounterAloneComponent,
     SideMenuComponent,
   ],
-  templateUrl: './alone-page.component.html',
-  styleUrls: ['./alone-page.component.css', '../../../maps/layout/maps-layout/maps-layout.component.css']
+  selector: 'app-alone-page',
+  standalone: true,
+  styleUrls: ['./alone-page.component.css', '../../../maps/layout/maps-layout/maps-layout.component.css'],
+  templateUrl: './alone-page.component.html'
 })
 export class AlonePageComponent {
 

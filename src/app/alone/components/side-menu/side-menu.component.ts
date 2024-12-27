@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterModule } from "@angular/router";
+import { RouterModule } from "@angular/router";
 import { CommonModule } from "@angular/common";
 
 interface MenuItem {
@@ -19,6 +19,7 @@ interface MenuItem {
 })
 export class SideMenuComponent {
   public menuItems: MenuItem[] = [
+    { route: '/maps/map-screen', name: 'Map Screen' },
     { route: '/maps/fullscreen', name: 'FullScreen' },
     { route: '/maps/zoom-range', name: 'ZoomRange' },
     { route: '/maps/markers', name: 'Markers' },

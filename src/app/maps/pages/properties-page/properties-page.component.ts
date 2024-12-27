@@ -9,7 +9,8 @@ interface House {
 @Component({
   selector: 'app-properties-page',
   templateUrl: './properties-page.component.html',
-  styleUrl: './properties-page.component.css'
+  styleUrl: './properties-page.component.css',
+  standalone: false
 })
 export class PropertiesPageComponent {
   public houses: House[] = [

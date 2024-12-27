@@ -1,10 +1,11 @@
-import {AfterViewInit, Component, ElementRef, OnDestroy, ViewChild} from '@angular/core';
-import {LngLat, Map} from "mapbox-gl";
+import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
+import { LngLat, Map } from "mapbox-gl";
 
 @Component({
   selector: 'app-zoom-range-page',
   templateUrl: './zoom-range-page.component.html',
-  styleUrl: './zoom-range-page.component.css'
+  styleUrl: './zoom-range-page.component.css',
+  standalone: false
 })
 export class ZoomRangePageComponent implements AfterViewInit, OnDestroy {
   @ViewChild('map') divMap?: ElementRef;

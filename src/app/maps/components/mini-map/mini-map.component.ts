@@ -4,7 +4,8 @@ import { Map, Marker } from "mapbox-gl";
 @Component({
   selector: 'app-mini-map',
   templateUrl: './mini-map.component.html',
-  styleUrl: './mini-map.component.css'
+  styleUrl: './mini-map.component.css',
+  standalone: false
 })
 export class MiniMapComponent implements AfterViewInit {
   @Input() lngLat?: [number, number];

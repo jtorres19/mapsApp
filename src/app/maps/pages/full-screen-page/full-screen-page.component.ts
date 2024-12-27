@@ -4,7 +4,8 @@ import { Map } from 'mapbox-gl';
 @Component({
   selector: 'app-full-screen-page',
   templateUrl: './full-screen-page.component.html',
-  styleUrl: './full-screen-page.component.css'
+  styleUrl: './full-screen-page.component.css',
+  standalone: false
 })
 export class FullScreenPageComponent implements AfterViewInit {
   @ViewChild('map') divMap?: ElementRef;
